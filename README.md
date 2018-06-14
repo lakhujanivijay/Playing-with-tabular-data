@@ -4,4 +4,6 @@
 
 This is a small tutorial on manipulating tabular data using [csvtk](https://bioinf.shenwei.me/csvtk/)
 
-Check out this [link] (https://github.com/lakhujanivijay/Playing_with_tabular_data/blob/master/my_experiments.md)
+Check out this [link][1] 
+
+[1]:https://github.com/lakhujanivijay/Playing_with_tabular_data/blob/master/my_experiments.md
