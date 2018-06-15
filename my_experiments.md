@@ -13,8 +13,8 @@ I will be dealing with a csv file which could be accessed [here](https://raw.git
 [ csvtk]$ csvtk headers test.txt 
 test.txt
 1	GeneID
-2	FPKM_AT-3_Control
-3	FPKM_AT-3_Disease
+2	FPKM_Control
+3	FPKM_Disease
 4	fold_change
 5	log2_foldChange
 6	Regulation
@@ -44,16 +44,16 @@ file   num_cols   num_rows
 > either mention a column name (mandatory) - obtained from `csvtk headers test.txt`
 
 ```
-[ csvtk]$ cat test.txt | csvtk stats2 -f FPKM_AT-3_Control
+[ csvtk]$ cat test.txt | csvtk stats2 -f FPKM_Control
 field               num     sum   min    max   mean   stdev
-FPKM_AT-3_Control   100   97.43     0   8.31   0.97    1.42
+FPKM_Control   100   97.43     0   8.31   0.97    1.42
 ```
 > or mention a column number
 
 ```
 [ csvtk]$ cat test.txt | csvtk stats2 -f 2
 field               num     sum   min    max   mean   stdev
-FPKM_AT-3_Control   100   97.43     0   8.31   0.97    1.42
+FPKM_Control   100   97.43     0   8.31   0.97    1.42
 ```
 
 > can use multiple columns
@@ -61,8 +61,8 @@ FPKM_AT-3_Control   100   97.43     0   8.31   0.97    1.42
 ```
 [ csvtk]$ csvtk stats2 test.txt -f 2,3
 field               num      sum   min     max   mean   stdev
-FPKM_AT-3_Control   100    97.43     0    8.31   0.97    1.42
-FPKM_AT-3_Disease   100   159.92     0   12.18    1.6    2.17
+FPKM_Control   100    97.43     0    8.31   0.97    1.42
+FPKM_Disease   100   159.92     0   12.18    1.6    2.17
 ```
 
 ##### 4. Read through an excel file
@@ -71,7 +71,7 @@ FPKM_AT-3_Disease   100   159.92     0   12.18    1.6    2.17
 ```
 [ csvtk]$ csvtk xlsx2csv test.xlsx | csvtk head -n 2
 
-GeneID,FPKM_AT-3_Control,FPKM_AT-3_Disease,fold_change,log2_foldChange,Regulation,Description
+GeneID,FPKM_Control,FPKM_Disease,fold_change,log2_foldChange,Regulation,Description
 ENSRNA049442018,0,0.365817,N.A,N.A,N.A,2|51544689|51544760|-1|tRNA-Asp|tRNA-Asp for anticodon GUC
 ENSRNA049443086,0,0.660504,N.A,N.A,N.A,1|94669664|94669735|-1|tRNA-Gly|tRNA-Gly for anticodon UCC
 ```
@@ -118,7 +118,7 @@ ENSRNA049453317,2.972869,5.359037,1.80264821625,0.850117884742,Upregulated,12|34
 ```
 [ csvtk]$ csvtk xlsx2csv test.xlsx -n demo2 | csvtk head -n 2 -D "|"
 
-GeneID|FPKM_AT-3_Control|FPKM_AT-3_Disease|fold_change|log2_foldChange|Regulation|Description
+GeneID|FPKM_Control|FPKM_Disease|fold_change|log2_foldChange|Regulation|Description
 ENSRNA049442018|0|0.365817|N.A|N.A|N.A|"2|51544689|51544760|-1|tRNA-Asp|tRNA-Asp for anticodon GUC"
 ENSRNA049443086|0|0.660504|N.A|N.A|N.A|"1|94669664|94669735|-1|tRNA-Gly|tRNA-Gly for anticodon UCC"
 ```
