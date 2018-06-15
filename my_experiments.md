@@ -4,7 +4,7 @@
 
 ![alt text](https://github.com/lakhujanivijay/Playing_with_tabular_data/blob/master/pig.jpg "Like a pig!")
 
-I will be dealing with a csv file which could be accessed [here](https://raw.githubusercontent.com/lakhujanivijay/Playing_with_tabular_data/master/test.txt)
+I will be dealing with a csv file which could be accessed
 
 
 ##### 1. Getting headers
