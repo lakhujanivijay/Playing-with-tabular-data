@@ -4,7 +4,10 @@
 
 ![alt text](https://github.com/lakhujanivijay/Playing_with_tabular_data/blob/master/pig3.jpeg "Like a pig!")
 
-> Raw text data is a mud puddle. Geek pigs enjoy rolling !
+> _Raw text data is a mud puddle. Geek pigs enjoy rolling !_
+
+------------
+
 
 I will be dealing with a csv file which could be accessed [here](https://raw.githubusercontent.com/lakhujanivijay/Playing_with_tabular_data/master/test.txt).
 
