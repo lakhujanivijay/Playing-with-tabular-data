@@ -39,8 +39,22 @@ file   num_cols   num_rows
 #### 3. Getting summary of selected digital fields
 ----------------------------------------------
 
-- either mention a column name (mandatory) - obtained from `csvtk headers test.txt`
+- either mention a column name (mandatory) - obtained from `csvtk headers test.txt` as shown below
+- getting headers
 
+```
+[ csvtk]$ csvtk headers test.txt
+# test.txt
+1	GeneID
+2	FPKM_Control
+3	FPKM_Disease
+4	fold_change
+5	log2_foldChange
+6	Regulation
+7	Description
+```
+
+- now, either mention a coumn name 
 ```
 [ csvtk]$ cat test.txt | csvtk stats2 -f FPKM_Control
 field               num     sum   min    max   mean   stdev
