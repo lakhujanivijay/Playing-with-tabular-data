@@ -26,9 +26,9 @@ test.txt
 file   num_cols   num_rows
 -             7        100
 ```
-> _csvtk assumes that file has headers_, if not, use `-H`
+- _csvtk assumes that file has headers_, if not, use `-H`
 
-> `-H`, `--no-header-row` specifies that the input CSV file does not have header row
+- `-H`, `--no-header-row` specifies that the input CSV file does not have header row
 
 ```
 [ csvtk]$ cat test.txt | csvtk stat -H
@@ -39,14 +39,14 @@ file   num_cols   num_rows
 ##### 3. Getting summary of selected digital fields
 ----------------------------------------------
 
-> either mention a column name (mandatory) - obtained from `csvtk headers test.txt`
+- either mention a column name (mandatory) - obtained from `csvtk headers test.txt`
 
 ```
 [ csvtk]$ cat test.txt | csvtk stats2 -f FPKM_Control
 field               num     sum   min    max   mean   stdev
 FPKM_Control   100   97.43     0   8.31   0.97    1.42
 ```
-> or mention a column number
+- or mention a column number
 
 ```
 [ csvtk]$ cat test.txt | csvtk stats2 -f 2
@@ -54,7 +54,7 @@ field               num     sum   min    max   mean   stdev
 FPKM_Control   100   97.43     0   8.31   0.97    1.42
 ```
 
-> can use multiple columns
+- can use multiple columns
 
 ```
 [ csvtk]$ csvtk stats2 test.txt -f 2,3
@@ -73,13 +73,13 @@ GeneID,FPKM_Control,FPKM_Disease,fold_change,log2_foldChange,Regulation,Descript
 ENSRNA049442018,0,0.365817,N.A,N.A,N.A,2|51544689|51544760|-1|tRNA-Asp|tRNA-Asp for anticodon GUC
 ENSRNA049443086,0,0.660504,N.A,N.A,N.A,1|94669664|94669735|-1|tRNA-Gly|tRNA-Gly for anticodon UCC
 ```
-> `head` command to display first 2 lines
+- `head` command to display first 2 lines
 
 
 ##### 5. Retrieve sheet names
 -----------------------
 
-> `test.xlsx` has 2 subsheets named `demo1` and `demo2`
+- `test.xlsx` has 2 subsheets named `demo1` and `demo2`
 
 ```
 [ csvtk]$ csvtk xlsx2csv test.xlsx -a
@@ -87,7 +87,7 @@ index	sheet
 1	demo1
 2	demo2
 ```
-> Retrieve data with sheet number (sheet number 1)
+- Retrieve data with sheet number (sheet number 1)
 ```
 [ csvtk]$ csvtk xlsx2csv test.xlsx -i 2
 
@@ -97,7 +97,7 @@ ENSRNA049453317,2.972869,5.359037,1.80264821625,0.850117884742,Upregulated,12|34
  ...
 
 ```
-> or with sheet name (sheet name `demo2`)
+- or with sheet name (sheet name `demo2`)
 
 ```
 [ csvtk]$ csvtk xlsx2csv test.xlsx -n demo2
@@ -111,7 +111,7 @@ ENSRNA049453317,2.972869,5.359037,1.80264821625,0.850117884742,Upregulated,12|34
 ##### 6. Retreive a subset of rows from a subsheet and output by adding a delemiter
 -----------------------------------------------------------------------------
 
-> take first 2 rows (`head -n 2`) of subsheet demo2 (`-n demo2`) from excel file `test.xlsx` and output the data with delimiter `"|"` (`-D "|"`)
+- take first 2 rows (`head -n 2`) of subsheet demo2 (`-n demo2`) from excel file `test.xlsx` and output the data with delimiter `"|"` (`-D "|"`)
 
 ```
 [ csvtk]$ csvtk xlsx2csv test.xlsx -n demo2 | csvtk head -n 2 -D "|"
