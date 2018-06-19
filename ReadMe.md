@@ -54,7 +54,7 @@ file   num_cols   num_rows
 7	Description
 ```
 
-- now, either mention a coumn name 
+- now, either mention a column name 
 ```
 [ csvtk]$ cat test.txt | csvtk stats2 -f FPKM_Control
 field               num     sum   min    max   mean   stdev
