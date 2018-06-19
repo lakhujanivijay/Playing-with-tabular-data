@@ -145,6 +145,8 @@ ENSRNA049443086|0|0.660504|N.A|N.A|N.A|"1|94669664|94669735|-1|tRNA-Gly|tRNA-Gly
 
 #### 7. Subsetting files
 -----------------------------------------------------------------------------
+- fetching the first 2 columns, a range like parameter `1-3` is supported
+- `head` allows getting first few rows, in this case that is `10`
 ```
 [ csvtk]$ csvtk cut -f 1-3 test.txt | csvtk head -n 10
 GeneID,FPKM_Control,FPKM_Disease
