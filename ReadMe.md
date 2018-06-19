@@ -2,11 +2,6 @@
 
 > Vijay Lakhujani, June 14, 2018
 
-![alt text]( "The Mighty Pig!")
-
-> _Raw text data is a mud puddle. Geek pigs enjoy rolling !_
-...The Mighty Pig
-
 ------------
 
 
