@@ -2,8 +2,6 @@
 
 > Vijay Lakhujani, June 14, 2018
 
-------------
-
 I will be dealing with some demo data sets which could be accessed [here](https://github.com/lakhujanivijay/Playing_with_tabular_data/tree/master/data_set).
 
 
