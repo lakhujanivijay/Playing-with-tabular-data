@@ -1,9 +1,9 @@
-# Getting my hands dirty with [csvtk](https://bioinf.shenwei.me/csvtk/) 
+# Getting my hands dirty with csvtk!!
 
 > Vijay Lakhujani, June 14, 2018
 
 ### What the heck is csvtk?
-csvtk a cross-platform, efficient and practical CSV/TSV toolkit
+csvtk a cross-platform, efficient and practical CSV/TSV toolkit. For more information, click [here](https://bioinf.shenwei.me/csvtk/) 
 
 
 I will be dealing with some demo data sets which could be accessed [here](https://github.com/lakhujanivijay/Playing_with_tabular_data/tree/master/data_set).
