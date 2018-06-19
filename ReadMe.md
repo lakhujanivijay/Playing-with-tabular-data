@@ -4,7 +4,7 @@
 
 ------------
 
-I will be dealing with a csv file which could be accessed [here](https://github.com/lakhujanivijay/Playing_with_tabular_data/tree/master/data_set).
+I will be dealing with some demo data sets which could be accessed [here](https://github.com/lakhujanivijay/Playing_with_tabular_data/tree/master/data_set).
 
 
 ##### 1. Getting headers
