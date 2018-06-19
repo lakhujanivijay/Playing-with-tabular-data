@@ -2,7 +2,7 @@
 
 > Vijay Lakhujani, June 14, 2018
 
-![alt text](https://github.com/lakhujanivijay/Playing_with_tabular_data/blob/master/pig3.jpeg "The Mighty Pig!")
+![alt text](https://github.com/lakhujanivijay/Playing_with_tabular_data/blob/master/pig-in-mud.png "The Mighty Pig!")
 
 > _Raw text data is a mud puddle. Geek pigs enjoy rolling !_
 ...The Mighty Pig
