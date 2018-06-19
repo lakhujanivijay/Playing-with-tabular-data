@@ -79,13 +79,13 @@ ENSRNA049443086,0,0.660504,N.A,N.A,N.A,1|94669664|94669735|-1|tRNA-Gly|tRNA-Gly 
 #### 5. Retrieve sheet names
 -----------------------
 
-- `test.xlsx` has 2 subsheets named `demo1` and `demo2`
+- `test.xlsx` has 2 subsheets named `demo1` and `demo2.txt`
 
 ```
 [ csvtk]$ csvtk xlsx2csv test.xlsx -a
 index	sheet
 1	demo1
-2	demo2
+2	demo2.txt
 ```
 - Retrieve data with sheet number (sheet number 1)
 ```
@@ -97,10 +97,10 @@ ENSRNA049453317,2.972869,5.359037,1.80264821625,0.850117884742,Upregulated,12|34
  ...
 
 ```
-- or with sheet name (sheet name `demo2`)
+- or with sheet name (sheet name `demo2.txt`)
 
 ```
-[ csvtk]$ csvtk xlsx2csv test.xlsx -n demo2
+[ csvtk]$ csvtk xlsx2csv test.xlsx -n demo2.txt
 
 ENSRNA049453302,0,0.657116,N.A,N.A,N.A,12|34735376|34735483|1|snoZ103|Small nucleolar RNA Z103
 ENSRNA049453317,2.972869,5.359037,1.80264821625,0.850117884742,Upregulated,12|34734956|34735052|1|snoR1|Small nucleolar RNA snoR1
@@ -111,15 +111,12 @@ ENSRNA049453317,2.972869,5.359037,1.80264821625,0.850117884742,Upregulated,12|34
 #### 6. Retreive a subset of rows from a subsheet and output by adding a delemiter
 -----------------------------------------------------------------------------
 
-- take first 2 rows (`head -n 2`) of subsheet demo2 (`-n demo2`) from excel file `test.xlsx` and output the data with delimiter `"|"` (`-D "|"`)
+- take first 2 rows (`head -n 2`) of subsheet demo2.txt (`-n demo2.txt`) from excel file `test.xlsx` and output the data with delimiter `"|"` (`-D "|"`)
 
 ```
-[ csvtk]$ csvtk xlsx2csv test.xlsx -n demo2 | csvtk head -n 2 -D "|"
+[ csvtk]$ csvtk xlsx2csv test.xlsx -n demo2.txt | csvtk head -n 2 -D "|"
 
 GeneID|FPKM_Control|FPKM_Disease|fold_change|log2_foldChange|Regulation|Description
 ENSRNA049442018|0|0.365817|N.A|N.A|N.A|"2|51544689|51544760|-1|tRNA-Asp|tRNA-Asp for anticodon GUC"
 ENSRNA049443086|0|0.660504|N.A|N.A|N.A|"1|94669664|94669735|-1|tRNA-Gly|tRNA-Gly for anticodon UCC"
 ```
-
-
-
