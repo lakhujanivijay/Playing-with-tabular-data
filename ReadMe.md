@@ -108,7 +108,11 @@ index	sheet
 - Retrieve data with sheet number (sheet number 1)
 ```
 [ csvtk]$ csvtk xlsx2csv test.xlsx -i 2
+```
+
 > _Not all data shown_
+
+```
 ENSRNA049453302,0,0.657116,N.A,N.A,N.A,12|34735376|34735483|1|snoZ103|Small nucleolar RNA Z103
 ENSRNA049453317,2.972869,5.359037,1.80264821625,0.850117884742,Upregulated,12|34734956|34735052|1|snoR1|Small nucleolar RNA snoR1
  ...
