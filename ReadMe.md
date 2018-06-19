@@ -5,7 +5,7 @@
 I will be dealing with some demo data sets which could be accessed [here](https://github.com/lakhujanivijay/Playing_with_tabular_data/tree/master/data_set).
 
 
-##### 1. Getting headers
+#### 1. Getting headers
 -------------------------
 ```
 [ csvtk]$ csvtk headers test.txt 
@@ -19,7 +19,7 @@ test.txt
 7	Description
 ```
 
-##### 2. Getting stats of file
+#### 2. Getting stats of file
 -------------------------
 ```
 [ csvtk]$ cat test.txt | csvtk stat 
@@ -36,7 +36,7 @@ file   num_cols   num_rows
 -             7        101
 ```
 
-##### 3. Getting summary of selected digital fields
+#### 3. Getting summary of selected digital fields
 ----------------------------------------------
 
 - either mention a column name (mandatory) - obtained from `csvtk headers test.txt`
@@ -63,7 +63,7 @@ FPKM_Control   100    97.43     0    8.31   0.97    1.42
 FPKM_Disease   100   159.92     0   12.18    1.6    2.17
 ```
 
-##### 4. Read through an excel file
+#### 4. Read through an excel file
 -----------------------------
 
 ```
@@ -76,7 +76,7 @@ ENSRNA049443086,0,0.660504,N.A,N.A,N.A,1|94669664|94669735|-1|tRNA-Gly|tRNA-Gly 
 - `head` command to display first 2 lines
 
 
-##### 5. Retrieve sheet names
+#### 5. Retrieve sheet names
 -----------------------
 
 - `test.xlsx` has 2 subsheets named `demo1` and `demo2`
@@ -108,7 +108,7 @@ ENSRNA049453317,2.972869,5.359037,1.80264821625,0.850117884742,Upregulated,12|34
  ...
 ```
 
-##### 6. Retreive a subset of rows from a subsheet and output by adding a delemiter
+#### 6. Retreive a subset of rows from a subsheet and output by adding a delemiter
 -----------------------------------------------------------------------------
 
 - take first 2 rows (`head -n 2`) of subsheet demo2 (`-n demo2`) from excel file `test.xlsx` and output the data with delimiter `"|"` (`-D "|"`)
