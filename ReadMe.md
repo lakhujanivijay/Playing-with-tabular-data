@@ -1,4 +1,5 @@
 # Getting my hands dirty with csvtk!!
+![GitHub Logo](https://github.com/lakhujanivijay/Playing_with_tabular_data/blob/master/pig-in-mud.png)
 
 > [*Vijay Lakhujani*](https://www.biostars.org/u/26377/)*, June 14, 2018*
 
