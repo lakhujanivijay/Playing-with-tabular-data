@@ -1,6 +1,6 @@
 # Getting my hands dirty with csvtk!!
 ![](https://github.com/lakhujanivijay/Playing_with_tabular_data/blob/master/tenor.gif)
-> [*Vijay Lakhujani*](https://github.com/lakhujanivijay)*, June 14, 2018*
+> [*Vijay Lakhujani*](https://www.vijaylakhujani.me/)*, June 14, 2018*
 
 ### What the heck is csvtk?
 csvtk a cross-platform, efficient and practical CSV/TSV toolkit. For more information, click [here](https://bioinf.shenwei.me/csvtk/) 
